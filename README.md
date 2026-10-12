@@ -1,5 +1,19 @@
 # kickstart.nvim
 
+## Personal launcher
+
+This config is installed at `~/.config/nvim.bak` on my laptop.
+Load the tracked shell alias by adding this line to `~/.zshrc`:
+
+```sh
+source "$HOME/.config/nvim.bak/shell/aliases.zsh"
+```
+
+Run `source ~/.zshrc` or open a new terminal, then use `nv` to launch
+this config, or `nv filename` to edit a file. The alias sets
+`NVIM_APPNAME=nvim.bak`, giving this config its own plugin and state directories.
+If the config folder is renamed, update both the source path and the alias.
+
 ## Introduction
 
 A starting point for Neovim that is:
@@ -238,4 +252,3 @@ sudo dnf install -y gcc make git ripgrep fd-find unzip neovim
 sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
-
